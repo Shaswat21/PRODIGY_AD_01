@@ -10,42 +10,23 @@ class ThemeClass {
   Color darkTextColor = HexColor('#388100');
   Color darkPrimaryColor = HexColor('#2A2A2A');
   Color errorColor = HexColor('#FF333B');
-  Color secondaryColor = HexColor('#FF8B6A');
-  Color accentColor = HexColor('#FFBF98');
   Color labelSmall = HexColor('#8a8a8a');
 
   //Light Theme
   static ThemeData lightTheme = ThemeData(
     primaryColor: Colors.white,
-    appBarTheme: AppBarTheme(
-      backgroundColor: _themeClass.lightBackgroundColor,
-      centerTitle: true,
-    ),
     scaffoldBackgroundColor: _themeClass.lightBackgroundColor,
-    indicatorColor: Colors.black,
-    bottomAppBarTheme: BottomAppBarTheme(color: _themeClass.accentColor),
-    floatingActionButtonTheme:
-        const FloatingActionButtonThemeData(backgroundColor: Colors.green),
     splashColor: Colors.transparent,
     shadowColor: Colors.blueGrey.shade200,
-    dividerColor: Colors.grey,
-    dividerTheme: const DividerThemeData().copyWith(
-      color: Colors.grey,
-    ),
     textTheme: const TextTheme().copyWith(
-      bodyLarge: TextStyle(color: _themeClass.shortTextColor),
-      bodyMedium: TextStyle(color: _themeClass.shortTextColor),
-      bodySmall: TextStyle(color: _themeClass.shortTextColor),
       titleLarge: TextStyle(color: _themeClass.shortTextColor, fontSize: 40),
       titleMedium: TextStyle(color: _themeClass.shortTextColor, fontSize: 30),
-      titleSmall: TextStyle(color: _themeClass.lightPrimaryColor),
       labelLarge: TextStyle(color: _themeClass.shortTextColor, fontSize: 40),
       labelMedium: TextStyle(color: _themeClass.digitColor, fontSize: 30),
       labelSmall: TextStyle(color: _themeClass.labelSmall, fontSize: 25),
     ),
     colorScheme: const ColorScheme.light().copyWith(
       primary: _themeClass.lightPrimaryColor,
-      secondary: _themeClass.secondaryColor,
       error: _themeClass.errorColor,
     ),
   );
